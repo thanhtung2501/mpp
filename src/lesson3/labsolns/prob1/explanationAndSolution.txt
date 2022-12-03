@@ -1,0 +1,26 @@
+Explanation
+In class PersonWithJob, line 28:
+    System.out.println("p1.equals(p2)? " + p1.equals(p2))
+    will call equals method from PersonWithJob class and
+    the result will be returned from the line number 18.
+
+    Details:
+    p2 is a Person whereas p1 is a PersonWithJob, therefore
+    the result is false from the line number 18
+    if(!(aPersonWithJob instanceof PersonWithJob) return false ---> this line will return the result which is false).
+
+In class PersonWithJob, line 29:
+    System.out.println("p2.equals(p1)? " + p2.equals(p1))
+    will call equals method from Person class and the result
+    will be returned from line number 18.
+
+    Details:
+    p1 is a PersonWithJob and therefore program won't go to the line 16
+    if(!(aPerson instanceof Person)) return false ---> the program won't go to this line (line 16),
+    the program will continue to go to the next check and then check the name
+    of p1 and p2. So, the result will be returned true.
+
+
+
+Solution:
+
